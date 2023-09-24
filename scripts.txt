@@ -1,0 +1,15 @@
+Configurar o projeto para utilizar git flow
+Criar uma esteira de DevOps com o Github Action para entrega em ambiente Azure
+Configurar a esteira para utilizar Docker
+Integrar a esteira de DevOps com o Sonar Cloud
+Criar 2 (dois) testes de unidade com xUNIT
+O projeto deve utilizar Application Insights para monitoramento e observabilidade
+
+
+
+
+docker build -t net_core_devops:v1 -f ./net_core_devops/Dockerfile .
+docker run -p 5001:80 -t net_core_devops:v1 -d
+
+docker ps
+docker kill <ID_>
